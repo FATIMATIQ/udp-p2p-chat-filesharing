@@ -19,3 +19,5 @@ target_link_libraries(test_protocol common)
 
 add_executable(test_net tests/test_net.cpp)
 target_link_libraries(test_net common)
+add_executable(test_reliable tests/test_reliable.cpp)
+target_link_libraries(test_reliable common)
