@@ -21,3 +21,11 @@ add_executable(test_net tests/test_net.cpp)
 target_link_libraries(test_net common)
 add_executable(test_reliable tests/test_reliable.cpp)
 target_link_libraries(test_reliable common)
+add_executable(test_membership tests/test_membership.cpp)
+target_link_libraries(test_membership common)
+add_executable(test_chat tests/test_chat.cpp)
+target_link_libraries(test_chat common)
+
+# The real program
+add_executable(peer src/peer.cpp)
+target_link_libraries(peer common)
