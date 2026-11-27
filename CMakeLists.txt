@@ -29,3 +29,5 @@ target_link_libraries(test_chat common)
 # The real program
 add_executable(peer src/peer.cpp)
 target_link_libraries(peer common)
+add_executable(test_storage tests/test_storage.cpp)
+target_link_libraries(test_storage common)
